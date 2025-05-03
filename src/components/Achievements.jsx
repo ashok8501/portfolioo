@@ -129,6 +129,7 @@ const Achievements = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-3 py-1 bg-blue-600 hover:bg-blue-700 text-white text-xs rounded-full shadow hover:shadow-md transition-all flex items-center gap-1"
+                    aria-label={`View ${achievement.title} Certificate`}
                   >
                     <ExternalLink size={14} />
                     <span>View Certificate</span>
