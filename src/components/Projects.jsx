@@ -21,6 +21,19 @@ const Projects = () => {
       githubLink: 'https://github.com/ashok8501/DoctorAppoinment/tree/main/frontend',
     },
     {
+      id: 4,
+      title: 'Personal Portfolio Website',
+      image: 'https://res.cloudinary.com/ddkzadleu/image/upload/v1746250212/port_cct0rs.jpg', // Replace with your actual portfolio image
+      description: [
+        '• Designed and developed a personal portfolio website to showcase projects and skills.',
+        '• Implemented smooth scroll, section navigation, and dark mode using React and Tailwind CSS.',
+        '• Hosted the website on GitHub Pages for public access and easy updates.',
+      ],
+      tags: ['React', 'Tailwind CSS', 'Portfolio', 'Responsive'],
+      category: 'Web',
+      githubLink: 'https://github.com/ashok8501/portfolioo',
+    },
+    {
       id: 2,
       title: 'Sentiment Analysis on Restaurant Reviews',
       image: 'https://res.cloudinary.com/ddkzadleu/image/upload/v1746212217/restaurent_qgntku.jpg',
@@ -31,7 +44,7 @@ const Projects = () => {
       ],
       tags: ['Python', 'NLP', 'MultinomialNB', 'Classification'],
       category: 'ML',
-      githubLink: '',  // Empty GitHub link
+      githubLink: '',
     },
     {
       id: 3,
@@ -44,7 +57,7 @@ const Projects = () => {
       ],
       tags: ['TensorFlow', 'Deep Learning', 'Healthcare AI', 'Python'],
       category: 'AI',
-      githubLink: '',  // Empty GitHub link
+      githubLink: '',
     },
   ];
 
@@ -94,7 +107,6 @@ const Projects = () => {
                     <li key={i}>{point}</li>
                   ))}
                   <li>
-                    {/* Conditionally render GitHub link or 'Updated soon' */}
                     {project.githubLink ? (
                       <>
                         View on GitHub:{" "}
