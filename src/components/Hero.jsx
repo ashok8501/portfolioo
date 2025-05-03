@@ -63,7 +63,7 @@ const Hero = () => {
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
               {/* View Resume */}
               <a 
-                href="/resumeee.pdf"
+                href="/assets/resumeee.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all flex items-center gap-2 group"
