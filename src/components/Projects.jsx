@@ -9,6 +9,19 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      title: 'Doctor Appointment Booking Frontend Application',
+      image: 'https://res.cloudinary.com/ddkzadleu/image/upload/v1746212515/doctirr_vl1r2o.jpg',
+      description: [
+        '• Developed a responsive doctor appointment booking interface using React and Tailwind CSS.',
+        '• Implemented routing, form validation, and calendar integration for scheduling.',
+        '• Ensured mobile-first design and smooth UI transitions for better patient experience.',
+      ],
+      tags: ['React', 'JavaScript', 'Tailwind CSS', 'Frontend'],
+      category: 'Web',
+      githubLink: 'https://github.com/ashok8501/DoctorAppoinment/tree/main/frontend',
+    },
+    {
+      id: 2,
       title: 'Sentiment Analysis on Restaurant Reviews',
       image: 'https://res.cloudinary.com/ddkzadleu/image/upload/v1746212217/restaurent_qgntku.jpg',
       description: [
@@ -18,9 +31,10 @@ const Projects = () => {
       ],
       tags: ['Python', 'NLP', 'MultinomialNB', 'Classification'],
       category: 'ML',
+      githubLink: '',  // Empty GitHub link
     },
     {
-      id: 2,
+      id: 3,
       title: 'Heart Disease Predictions using TensorFlow Technology',
       image: 'https://res.cloudinary.com/ddkzadleu/image/upload/v1746212271/heart_h1vusb.jpg',
       description: [
@@ -30,30 +44,7 @@ const Projects = () => {
       ],
       tags: ['TensorFlow', 'Deep Learning', 'Healthcare AI', 'Python'],
       category: 'AI',
-    },
-    {
-      id: 3,
-      title: 'Crop Disease Prediction using Image Classification',
-      image: 'https://res.cloudinary.com/ddkzadleu/image/upload/v1746212432/crop_g6nnhc.jpg',
-      description: [
-        '• Built an image classification model using Keras to detect diseases in plant leaves from captured images.',
-        '• Trained CNN models on custom agricultural datasets for real-time prediction of healthy vs. infected crops.',
-        '• Integrated the model into a mobile app with TensorFlow Lite for offline use by farmers.',
-      ],
-      tags: ['Keras', 'CNN', 'Image Classification', 'TensorFlow Lite'],
-      category: 'AI',
-    },
-    {
-      id: 4,
-      title: 'Doctor Booking Frontend Application',
-      image: 'https://res.cloudinary.com/ddkzadleu/image/upload/v1746212515/doctirr_vl1r2o.jpg',
-      description: [
-        '• Developed a responsive doctor appointment booking interface using React and Tailwind CSS.',
-        '• Implemented routing, form validation, and calendar integration for scheduling.',
-        '• Ensured mobile-first design and smooth UI transitions for better patient experience.',
-      ],
-      tags: ['React', 'JavaScript', 'Tailwind CSS', 'Frontend'],
-      category: 'Web',
+      githubLink: '',  // Empty GitHub link
     },
   ];
 
@@ -102,6 +93,24 @@ const Projects = () => {
                   {project.description.map((point, i) => (
                     <li key={i}>{point}</li>
                   ))}
+                  <li>
+                    {/* Conditionally render GitHub link or 'Updated soon' */}
+                    {project.githubLink ? (
+                      <>
+                        View on GitHub:{" "}
+                        <a
+                          href={project.githubLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800"
+                        >
+                          Click here
+                        </a>
+                      </>
+                    ) : (
+                      <span className="text-gray-600 dark:text-gray-300"> Project link will be Updated soon</span>
+                    )}
+                  </li>
                 </ul>
 
                 <div className="flex flex-wrap gap-2">

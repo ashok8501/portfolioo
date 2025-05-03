@@ -36,15 +36,15 @@ const Skills = () => {
     // Tools
     { name: 'Git', level: 45, category: 'Tools' },
     { name: 'GitHub', level: 40, category: 'Tools' },
-    { name: 'Postman', level: 10, category: 'Tools' },
+ ,
     
     // Database
     { name: 'MongoDB', level: 40, category: 'Database' },
     { name: 'MySQL', level: 60, category: 'Database' },
     
     // Android
-    { name: 'Kotlin', level: 10, category: 'Android' },
-    { name: 'Android SDK', level: 5, category: 'Android' },
+    { name: 'Kotlin', level: 20, category: 'Android' },
+    { name: 'Android SDK', level: 15, category: 'Android' },
     
     // ML/AI
     { name: 'Machine Learning', level: 70, category: 'ML/AI' },
